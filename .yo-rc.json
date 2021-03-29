@@ -42,7 +42,9 @@
     "jwtSecretKey": "MDBiYTM2MjliMGI3YTZmYjNmMzA3ODFlNWEyZDYxZmM4YjBjZjFhNGUwNmRhYWMzYTg3NjljYjJkYzBiYjNkNzgxMzhkYjkyYzMyMWY5YzFlMTRlNjUzMjg0MWU4YTkzZWYxYzljYTBmNDk1YmVmNDMxMzRhZWYwOWFlYjIxN2E=",
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "reactive": false
+    "reactive": false,
+    "entities": ["NpaReport"],
+    "lastLiquibaseTimestamp": 1617038005000
   },
   "git-provider": "GitHub",
   "git-company": "apereasurge",

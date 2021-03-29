@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity NpaReport.
+    -->
+    <changeSet id="20210329171325-1" author="jhipster">
+        <createTable tableName="npa_report">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="npa_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="type_of_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="assignable" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="explanation" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="reserved" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="assigned" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="assignment_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="use_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="location" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="country" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="in_service" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="in_service_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="planning_letters" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="notes" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="overlay" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="overlay_complex" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="parent_npa_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="service" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="time_zone" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="area_served" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="map" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="in_jeopardy" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="relief_planning_in_progress" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="home_npa_local_calls" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="home_npa_toll_calls" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="foreign_npa_local_calls" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="foreign_npa_toll_calls" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="perm_hnpa_local_calls" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="perm_hnpa_toll_calls" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="perm_hnpa_foreign_local_calls" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="dialing_plan_notes" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20210329171325-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/npa_report.csv"
+                  separator=";"
+                  tableName="npa_report">
+            <column name="id" type="numeric"/>
+            <column name="npa_id" type="numeric"/>
+            <column name="type_of_code" type="string"/>
+            <column name="assignable" type="string"/>
+            <column name="explanation" type="string"/>
+            <column name="reserved" type="string"/>
+            <column name="assigned" type="string"/>
+            <column name="assignment_date" type="date"/>
+            <column name="use_type" type="string"/>
+            <column name="location" type="string"/>
+            <column name="country" type="string"/>
+            <column name="in_service" type="string"/>
+            <column name="in_service_date" type="date"/>
+            <column name="status" type="string"/>
+            <column name="planning_letters" type="string"/>
+            <column name="notes" type="string"/>
+            <column name="overlay" type="string"/>
+            <column name="overlay_complex" type="string"/>
+            <column name="parent_npa_id" type="numeric"/>
+            <column name="service" type="string"/>
+            <column name="time_zone" type="string"/>
+            <column name="area_served" type="string"/>
+            <column name="map" type="string"/>
+            <column name="in_jeopardy" type="string"/>
+            <column name="relief_planning_in_progress" type="string"/>
+            <column name="home_npa_local_calls" type="string"/>
+            <column name="home_npa_toll_calls" type="string"/>
+            <column name="foreign_npa_local_calls" type="string"/>
+            <column name="foreign_npa_toll_calls" type="string"/>
+            <column name="perm_hnpa_local_calls" type="string"/>
+            <column name="perm_hnpa_toll_calls" type="string"/>
+            <column name="perm_hnpa_foreign_local_calls" type="string"/>
+            <column name="dialing_plan_notes" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>
