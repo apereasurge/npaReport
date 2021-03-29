@@ -1,0 +1,144 @@
+{
+  "name": "NpaReport",
+  "fields": [
+    {
+      "fieldName": "npaId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "typeOfCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "assignable",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "explanation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "reserved",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "assigned",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "assignmentDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "useType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "location",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "country",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "inService",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "inServiceDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "planningLetters",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "notes",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "overlay",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "overlayComplex",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "parentNpaId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "service",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "timeZone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "areaServed",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "map",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "inJeopardy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "reliefPlanningInProgress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "homeNpaLocalCalls",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "homeNpaTollCalls",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "foreignNpaLocalCalls",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "foreignNpaTollCalls",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "permHnpaLocalCalls",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "permHnpaTollCalls",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "permHnpaForeignLocalCalls",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dialingPlanNotes",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "npa_report",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210329171325"
+}

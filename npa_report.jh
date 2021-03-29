@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+
+
+entity NpaReport {
+npaId Long
+typeOfCode String
+assignable  String
+explanation String
+reserved String
+assigned String
+assignmentDate LocalDate
+useType String
+location String
+country String
+inService String
+inServiceDate LocalDate
+status String
+planningLetters String
+notes String
+overlay String
+overlayComplex String
+parentNpaId Long
+service String
+timeZone String
+areaServed String
+map String
+inJeopardy String
+reliefPlanningInProgress String
+homeNpaLocalCalls String
+homeNpaTollCalls String
+foreignNpaLocalCalls String
+foreignNpaTollCalls String
+permHnpaLocalCalls String
+permHnpaTollCalls String
+permHnpaForeignLocalCalls String
+dialingPlanNotes String
+}
+
+filter NpaReport
